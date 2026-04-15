@@ -1,0 +1,10 @@
+{
+  "best_model_name": "Random Forest",
+  "class_names": [
+    "Pepper___bell___Bacterial_spot",
+    "Potato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___healthy"
+  ],
+  "feature_vector_length": 547
+}

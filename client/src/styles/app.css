@@ -1,0 +1,134 @@
+.page-shell {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-glow {
+  border-radius: 999px;
+  filter: blur(60px);
+  height: 220px;
+  position: absolute;
+  width: 220px;
+}
+
+.page-glow-left {
+  background: rgba(76, 175, 80, 0.16);
+  left: -60px;
+  top: 120px;
+}
+
+.page-glow-right {
+  background: rgba(46, 125, 50, 0.12);
+  bottom: 80px;
+  right: -40px;
+}
+
+.app-layout {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 56px 20px 72px;
+  position: relative;
+  z-index: 1;
+}
+
+.app-header {
+  margin: 0 auto 28px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.app-title {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  margin: 0;
+}
+
+.app-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 14px auto 0;
+  max-width: 680px;
+}
+
+.main-card {
+  backdrop-filter: blur(14px);
+  background: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: 22px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 248, 0.96));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+}
+
+.panel-title {
+  margin: 0 0 8px;
+}
+
+.panel-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.result-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-placeholder {
+  align-items: center;
+  background: linear-gradient(180deg, #f8fcf8, #f2f7f2);
+  border: 1px dashed rgba(76, 175, 80, 0.28);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  min-height: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.placeholder-icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-layout {
+    padding: 36px 16px 52px;
+  }
+
+  .main-card {
+    padding: 16px;
+  }
+}

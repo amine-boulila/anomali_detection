@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #f6faf6;
+  --surface-color: rgba(255, 255, 255, 0.86);
+  --surface-strong: #ffffff;
+  --border-color: rgba(76, 175, 80, 0.18);
+  --text-primary: #173321;
+  --text-secondary: #51655a;
+  --primary-dark: #2e7d32;
+  --primary: #4caf50;
+  --primary-soft: #eaf7ea;
+  --danger: #d95d39;
+  --danger-soft: #fff1ed;
+  --healthy: #2f8f4e;
+  --shadow-lg: 0 24px 60px rgba(46, 125, 50, 0.14);
+  --shadow-md: 0 14px 32px rgba(28, 68, 34, 0.12);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --font-body: "Segoe UI Variable", "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(76, 175, 80, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(46, 125, 50, 0.1), transparent 30%),
+    linear-gradient(180deg, #fbfefb 0%, #f2f7f2 100%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
